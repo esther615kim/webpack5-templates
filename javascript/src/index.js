@@ -1,0 +1,2 @@
+import generateCateImage
+    from './generateCateImage';
