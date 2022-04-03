@@ -1,4 +1,5 @@
 import generateCateImage from './generateCateImage';
-import './styles/main.scss'
+import svgIcon from './assets/svgIcon.svg';
+import './styles/main.scss';
 
 console.log(generateCateImage());

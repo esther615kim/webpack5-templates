@@ -12,7 +12,9 @@ module.exports = {
         //file
         filename: "[name][contenthash].js",
         // prevent bundle files stacked up
-        clean: true
+        clean: true,
+        // added in webpack 5
+        assetModuleFilename: 'assets/[name][ext]'
     },
     devtool: 'source-map',
     devServer: {
@@ -47,6 +49,10 @@ module.exports = {
                         presets: ['@babel/preset-env']
                     }
                 }
+            },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: 'asset/resource'
             }
         ]
     },
