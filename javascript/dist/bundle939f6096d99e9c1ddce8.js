@@ -679,9 +679,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+var svgImage = document.getElementById('svgImage');
+svgImage.src = _assets_svgIcon_svg__WEBPACK_IMPORTED_MODULE_1__;
 console.log((0,_generateCateImage__WEBPACK_IMPORTED_MODULE_0__["default"])());
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle48a77cb294c416fa5e5c.js.map
+//# sourceMappingURL=bundle939f6096d99e9c1ddce8.js.map
