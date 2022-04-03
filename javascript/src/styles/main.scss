@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;600&family=Roboto:ital,wght@0,400;1,500&display=swap');
+
+$primary-color:#eee;
+$secondary-color:rgb(141, 201, 178)
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    background-color: $primary-color;
+}
+
+h3{
+    color:$secondary-color;
+}
