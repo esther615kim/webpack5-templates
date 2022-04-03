@@ -1,2 +1,3 @@
-import generateCateImage
-    from './generateCateImage';
+import generateCateImage from './generateCateImage';
+
+console.log(generateCateImage());
