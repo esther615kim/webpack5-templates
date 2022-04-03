@@ -8,9 +8,12 @@
     "dev": "webpack serve"
   },
   "keywords": [],
-  "author": "esther615kim",
+  "author": "ekim",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.17.8",
+    "@babel/preset-env": "^7.16.11",
+    "babel-loader": "^8.2.4",
     "css-loader": "^6.7.1",
     "html-webpack-plugin": "^5.5.0",
     "sass": "^1.49.11",

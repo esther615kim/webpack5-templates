@@ -11,7 +11,10 @@ module.exports = {
         path: path.resolve(__dirname, "dist"),
         //file
         filename: "[name][contenthash].js",
+        // prevent bundle files stacked up
+        clean: true
     },
+    devtool: 'source-map',
     devServer: {
         static: {
             directory: path.resolve(__dirname, 'dist')
@@ -21,7 +24,7 @@ module.exports = {
         open: true,
         // hot - hot reloading
         hot: true,
-        // compress -enable gzip comression
+        // compress -enable gzip compression
         compress: true,
         // redirect 404 to index.html
         historyApiFallback: true,
@@ -34,6 +37,17 @@ module.exports = {
                 test: /\.scss$/, // any file ends with .scss
                 use: ["style-loader", "css-loader", "sass-loader"], // will use these
             },
+            {
+                test: /\.js$/,
+                exclude: /node_modues/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        //!
+                        presets: ['@babel/preset-env']
+                    }
+                }
+            }
         ]
     },
     plugins: [
