@@ -13,7 +13,10 @@ module.exports = {
     // webpack 5 feature -live updating
     devServer: {
         port: 3010,
-        watchContentBase: true,
+        open: true,
+        hot: true,
+        compress: true,
+        historyApiFallback: true
     },
     //
     module: {
@@ -36,5 +39,8 @@ module.exports = {
                     "sass-loader"],
             },
         ]
-    }
+    },
+    plugins: [
+
+    ]
 }
