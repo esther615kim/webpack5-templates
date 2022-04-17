@@ -2,6 +2,6 @@
     "compilerOptions": {
       "module": "ES6", 
       "moduleResolution": "Node", 
-      "esModuleInterop": true, //
+      "esModuleInterop": true, 
     }
   }
