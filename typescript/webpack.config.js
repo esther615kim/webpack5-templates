@@ -13,7 +13,7 @@ module.exports = {
     devtool: "source-map",
     // webpack 5 feature -live updating
     devServer: {
-        port: 3010,
+        port: 3020,
         open: true,
         hot: true,
         compress: true,
